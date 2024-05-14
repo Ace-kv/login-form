@@ -26,6 +26,27 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+@layer base {
+  .login-bg {
+    @apply bg-login-bg2 h-screen bg-cover bg-center
+  }
+
+  .login-headings {
+    @apply text-center text-3xl mb-6 mt-0
+  }
+
+  .form-input {
+    @apply bg-[#ffffff25] rounded-3xl border border-transparent px-5 py-3.5 text-white cursor-text focus:bg-transparent 
+    focus:border-[#ced4da] focus:outline-none hover:bg-transparent hover:border-[#ced4da] hover:transition hover:ease-in-out 
+    hover:duration-300 placeholder:text-white
+  }
+
+  .checkbox {
+    @apply h-4 w-4 text-white border-[#d38d67] focus:ring-[#d38d67] ring-[#d38d67] border-2 cursor-pointer
+  }
+
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
